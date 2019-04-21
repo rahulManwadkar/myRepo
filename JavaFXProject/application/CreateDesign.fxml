@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="33.0" layoutY="36.0" prefHeight="32.0" prefWidth="124.0" text="CREATE DESIGN" />
+      <Button id="returnToHomePage" fx:id="returnToHomePage" layoutX="715.0" layoutY="39.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="RETURN TO HOMEPAGE" />
+      <Label layoutX="156.0" layoutY="124.0" prefHeight="32.0" prefWidth="102.0" text="DESIGN NAME" />
+      <Label layoutX="155.0" layoutY="183.0" prefHeight="32.0" prefWidth="102.0" text="COLLADA FILES" />
+      <RadioButton id="uploadNewFilesRB" fx:id="uploadNewFilesRB" layoutX="304.0" layoutY="188.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="163.0" text="UPLOAD NEW FILES" />
+      <RadioButton id="availableFilesRB" fx:id="availableFilesRB" layoutX="480.0" layoutY="188.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="190.0" text="AVAILABLE FILES" />
+      <Button id="createBTN" fx:id="createBTN" layoutX="300.0" layoutY="626.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="CREATE" />
+      <Button id="resetBTN" fx:id="resetBTN" layoutX="429.0" layoutY="626.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="RESET" />
+      <TextField id="designNameTF" fx:id="designNameTF" layoutX="300.0" layoutY="127.0" prefHeight="41.0" prefWidth="390.0" />
+      <ListView id="colladaFilesLV" fx:id="colladaFilesLV" layoutX="303.0" layoutY="234.0" prefHeight="101.0" prefWidth="268.0" />
+      <Button id="colladaFIlesBTN" fx:id="colladaFilesBTN" layoutX="588.0" layoutY="267.0" mnemonicParsing="false" onAction="#colladaFilesBTNAction" prefHeight="32.0" prefWidth="102.0" text="BROWSE" />
+      <Label layoutX="155.0" layoutY="370.0" prefHeight="55.0" prefWidth="124.0" text="SITE / TRANSMITTER DETAILS (.xlsx)" wrapText="true" />
+      <ListView id="siteTransmitterLV" fx:id="siteTransmitterLV" layoutX="300.0" layoutY="371.0" prefHeight="55.0" prefWidth="268.0" />
+      <Label layoutX="157.0" layoutY="482.0" prefHeight="26.0" prefWidth="124.0" text="RF-PROPAGATION" />
+      <ListView id="rfPropagationLV" fx:id="rfPropagationLV" layoutX="300.0" layoutY="465.0" prefHeight="55.0" prefWidth="268.0" />
+      <Button id="siteTransmitterBTN" fx:id="siteTransmitterBTN" layoutX="588.0" layoutY="385.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="BROWSE" />
+      <Button id="rfPropagationBTN" fx:id="rfPropagationBTN" layoutX="588.0" layoutY="475.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="BROWSE" />
+   </children>
+</AnchorPane>
